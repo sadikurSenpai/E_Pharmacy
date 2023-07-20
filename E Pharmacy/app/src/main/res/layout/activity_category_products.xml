@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+   >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:layout_marginTop="8dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/categoryProductImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/notfound" />
+            <LinearLayout
+                android:layout_toRightOf="@+id/categoryProductImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:id="@+id/categoryProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Product Here !"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/categoryProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"/>
+                <TextView
+                    android:id="@+id/categoryProductAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD"
+                    android:textStyle="bold"
+                    android:textColor="@color/custom_color"
+                    android:textAlignment="textEnd"/>
+                <TextView
+                    android:id="@+id/categoryProductDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</LinearLayout>

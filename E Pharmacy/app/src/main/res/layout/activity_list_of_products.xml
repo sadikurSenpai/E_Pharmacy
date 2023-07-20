@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ListOfProducts">
+
+    <TextView
+        android:id="@+id/listOfProductTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Covid 19 Products" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfProductRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/listOfProductTitle" />
+
+    <Button
+        android:id="@+id/listOfProductPostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/custom_color"
+        android:textColor="@color/white"
+        android:layout_below="@id/listOfProductRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:text="Post" />
+</RelativeLayout>

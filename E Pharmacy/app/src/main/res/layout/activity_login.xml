@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Login"
+        android:textAlignment="center"
+        android:padding="32dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/custom_color"
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/custom_shape">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_baseline_verified_user_24"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/signInUserMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:hint="Enter Email"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/custom_color"
+        android:background="@drawable/custom_border"/>
+
+    <EditText
+        android:id="@+id/signInPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:hint="Enter Password"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/custom_color"
+        android:background="@drawable/custom_border"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="LogIn"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/custom_color"
+        android:textColor="@color/white"
+        android:text="Login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="SignUp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="New here? Please register an account."
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

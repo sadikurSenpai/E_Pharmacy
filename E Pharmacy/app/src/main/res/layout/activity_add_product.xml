@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".add_product">
+
+    <ProgressBar
+        android:id="@+id/addProductProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="159dp"
+        android:layout_height="124dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a product"
+            android:textAlignment="center"
+            android:textColor="@color/custom_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/addProductChoosePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_image_24" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/custom_color"
+                android:onClick="signUpPictureChoosingButton"
+                android:text="Choose a picture"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/addProductProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_border"
+            android:hint="Enter Product Name"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/addProductCompanyName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_border"
+            android:hint="Enter Company Name"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/addProductSellingPicture"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:background="@drawable/custom_border"
+            android:hint="Enter Selling Price"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/addProductMRP"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:background="@drawable/custom_border"
+            android:hint="Enter MRP Price"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/addProductDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_border"
+            android:hint="Enter Description"
+            android:padding="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/addProductCreateButton"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/custom_color"
+            android:text="ADD"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
